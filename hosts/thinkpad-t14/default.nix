@@ -1,5 +1,10 @@
+{ inputs, ... }: 
+
 {
-  imports = [ ./hardware-configuration.nix ];
+  imports = [ 
+    ./hardware-configuration.nix
+    inputs.nixos-hardware.nixosModules.lenovo-thinkpad-t14-amd-gen2
+  ];
 
   boot.loader = {
     systemd-boot.enable = true;
