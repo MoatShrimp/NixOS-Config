@@ -1,6 +1,6 @@
- { pkgs, username, ... }: 
- 
- {  
+{ pkgs, username, ... }: 
+
+{  
   imports = [ ./programs ];
 
   nixpkgs.config.allowUnfree = true;
@@ -46,8 +46,8 @@
     slack
     discord
     gh
+    pinta
   ];
-
 
   virtualisation.docker = {
     enable = true;
@@ -58,4 +58,4 @@
   };
 
   system.stateVersion = "23.11";
- }
+}
