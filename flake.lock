@@ -32,6 +32,7 @@
       },
       "original": {
         "id": "nixos-hardware",
+        "ref": "master",
         "type": "indirect"
       }
     },
